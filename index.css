@@ -1,0 +1,273 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+  background-color: #8CC461;
+}
+.main{
+    display: block;
+}
+
+.game-score{
+    border: 3px solid white;
+    display: flex;
+    margin: 70px 260px 0px 268px;
+    border-radius: 15px;
+}
+.name{
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.score{
+    display: flex;
+    gap: 1.3rem;
+    margin: 8px 0px 6px 570px;
+}
+.user-score{
+    background-color: white;
+    width: 7rem;
+    border-radius: .7rem
+}
+.comp-score{
+    width: 7rem;
+    background-color: white;
+    border-radius: .7rem
+}
+#aa, #ab{
+    color: #656565;
+    text-align: center;
+    margin-top: 10px;
+}
+#bb, #ba{
+    font-size: 3rem;
+    font-weight:bolder;
+    text-align: center;
+    margin-top: 15px;
+}
+.computer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 20rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+.user, .machine{
+    opacity: 0;
+}
+.line1{
+    height: 10px;
+    width: 300px;
+    background-color: #000000A3;
+    margin: 8rem 0 0rem 36.2rem;
+}
+.line2{
+    height: 10px;
+    width: 250px;
+    background-color: #000000A3;
+    margin: 87px 0px 0px 527px;
+    rotate: 54deg;
+}
+.line3{
+    height: 10px;
+    width: 250px;
+    background-color: #000000A3;
+    margin: -9px 0px 0px 679px;
+    rotate: -53deg;
+}
+.point1, .point2, .point3{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px;
+    cursor: pointer;
+}
+.comp{
+    display:none;
+}
+.point1{
+    position: absolute;
+    bottom: 245px;
+    left: 550px;
+    border: 10px solid #0074B6;
+}
+.point2{
+    position: absolute;
+    bottom: 247px;
+    left: 800px;
+    border: 10px solid #BD00FF;
+}
+.point3{
+    position: absolute;
+    bottom: 70px;
+    left: 676px;
+    border: 10px solid #FFA943;
+}
+
+.point1 img {
+    margin: 20px 0px 0px 6px;
+}
+.point2 img{
+    margin: 20px 0px 0px 28px;
+}
+.point3 img{
+   margin: 15px 0px 0px 12px;
+}
+#play{
+    height: 2.7rem;
+    width: 9rem;
+    background-color: white;
+    color: grey;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer; 
+    position: relative;
+    top: 3rem;
+}
+#msg{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.text{
+    margin: 50px 0px 0px 670px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    display: none;
+}
+.rules{
+    border: 10px solid white;
+    border-radius: 1rem;
+    /* padding-left: 30px; */
+    width: 23rem;
+    height: 23rem;
+    background-color: #004429;
+    position: absolute;
+    bottom: 80px;
+    left: 70rem;
+    opacity: 0;
+}
+#square{
+    list-style-type: square;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 60px;
+}
+li::marker{
+    color: yellow;
+}
+ h1{
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+#next,#rule{
+    height: 2.5rem;
+    width: 5.5rem;
+    background-color: #8CC461;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+#next{
+    display: none;
+}
+.buttons{
+    position: absolute;
+    bottom: 1rem;
+    left: 79rem;
+    display: flex;
+    gap: 3rem;
+}
+.cross{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    border: 7px solid white;
+    position: absolute;
+    bottom: 27.1rem;
+    left: 91rem;
+    opacity: 0;
+    cursor: pointer;
+}
+.cross img{
+    margin: 9px 0px 0px 13px;
+}
+.show{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px;
+    position: absolute;
+    bottom: 225px;
+    left: 445px;
+    margin: 20px 0px 0px 6px;
+}
+.right{
+    bottom: 225px;
+    left: 950px;
+}
+.glare {
+    box-shadow: 0 0 20px 10px darkgreen;
+} 
+.star{
+    margin: 100px 0px 0px 500px;
+}
+.cup{
+    position: absolute;
+    top: 230px;
+    left: 650px;
+}
+#plays{
+    height: 2.7rem;
+    width: 9rem;
+    background-color: white;
+    color: grey;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.display{
+    position: absolute;
+    top: 25rem;
+    left: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+h1, h3{
+    color: white;
+    font-size: 2rem;
+    font-weight:bold;
+}
+#rule{
+    height: 2.5rem;
+    width: 5.5rem;
+    background-color: #8CC461;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: larger;
+}
+.celeb{
+    position: absolute;
+    top: 0px;
+}
+.celebs{
+    display: none;
+}
